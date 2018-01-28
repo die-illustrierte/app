@@ -1,4 +1,4 @@
-webpackJsonp([8],{
+webpackJsonp([7],{
 
 /***/ 111:
 /***/ (function(module, exports) {
@@ -23,35 +23,31 @@ webpackEmptyAsyncContext.id = 111;
 var map = {
 	"../pages/home/home.module": [
 		286,
-		1
+		0
 	],
 	"../pages/ionic-tabs-page-1/ionic-tabs-page-1.module": [
 		287,
-		7
+		6
 	],
 	"../pages/ionic-tabs-page-2/ionic-tabs-page-2.module": [
 		288,
-		6
+		5
 	],
 	"../pages/ionic-tabs/ionic-tabs.module": [
 		289,
-		5
+		4
 	],
 	"../pages/page-to-push/page-to-push.module": [
 		290,
-		4
+		3
 	],
 	"../pages/page1/page1.module": [
 		291,
-		3
+		2
 	],
 	"../pages/page2/page2.module": [
 		292,
-		2
-	],
-	"../pages/partial-home/partial-home.module": [
-		293,
-		0
+		1
 	]
 };
 function webpackAsyncContext(req) {
@@ -1089,8 +1085,7 @@ var AppModule = (function () {
                         { loadChildren: '../pages/ionic-tabs/ionic-tabs.module#IonicTabsPageModule', name: 'IonicTabsPage', segment: 'ionic-tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page-to-push/page-to-push.module#Module', name: 'PageToPushPage', segment: 'page-to-push', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page1/page1.module#Module', name: 'Page1Page', segment: 'page1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/page2/page2.module#Module', name: 'Page2Page', segment: 'page2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/partial-home/partial-home.module#Module', name: 'PartialHomePage', segment: 'partial-home/:type', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/page2/page2.module#Module', name: 'Page2Page', segment: 'page2', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_4__ionic2_super_tabs_src__["b" /* SuperTabsModule */].forRoot()
@@ -1220,14 +1215,15 @@ var DieIllustrierte = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]) === "function" && _a || Object)
     ], DieIllustrierte.prototype, "nav", void 0);
     DieIllustrierte = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/app/app.html"*/'<ion-split-pane>\n  <ion-menu [content]="content">\n    <ion-content>\n      <ion-list>\n        <button ion-item menuClose *ngFor="let item of menuItems" (click)="openPage(item)">{{ item.name }}</button>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n  <ion-nav [root]="rootPage" [rootParams]="rootParams" main #content></ion-nav>\n</ion-split-pane>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _d || Object])
     ], DieIllustrierte);
     return DieIllustrierte;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=app.component.js.map

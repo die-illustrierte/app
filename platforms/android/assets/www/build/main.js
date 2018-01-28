@@ -1,4 +1,4 @@
-webpackJsonp([9],{
+webpackJsonp([8],{
 
 /***/ 111:
 /***/ (function(module, exports) {
@@ -27,34 +27,30 @@ var map = {
 	],
 	"../pages/ionic-tabs-page-1/ionic-tabs-page-1.module": [
 		287,
-		8
+		7
 	],
 	"../pages/ionic-tabs-page-2/ionic-tabs-page-2.module": [
 		288,
-		7
+		6
 	],
 	"../pages/ionic-tabs/ionic-tabs.module": [
 		289,
-		6
+		5
 	],
 	"../pages/page-to-push/page-to-push.module": [
 		290,
-		5
+		4
 	],
 	"../pages/page1/page1.module": [
 		291,
-		4
+		3
 	],
 	"../pages/page2/page2.module": [
 		292,
-		3
-	],
-	"../pages/page3/page3.module": [
-		293,
 		2
 	],
 	"../pages/partial-home/partial-home.module": [
-		294,
+		293,
 		0
 	]
 };
@@ -1094,7 +1090,6 @@ var AppModule = (function () {
                         { loadChildren: '../pages/page-to-push/page-to-push.module#Module', name: 'PageToPushPage', segment: 'page-to-push', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page1/page1.module#Module', name: 'Page1Page', segment: 'page1', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page2/page2.module#Module', name: 'Page2Page', segment: 'page2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/page3/page3.module#Module', name: 'Page3Page', segment: 'page3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/partial-home/partial-home.module#Module', name: 'PartialHomePage', segment: 'partial-home/:type', priority: 'low', defaultHistory: [] }
                     ]
                 }),
