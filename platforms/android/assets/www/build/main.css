@@ -27980,10 +27980,6 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-.scroll-content {
-  background: #f7f7f7;
-}
-
 super-tabs {
   height: 100%;
   display: -webkit-box;
@@ -28267,6 +28263,10 @@ super-tabs-toolbar > ion-toolbar.toolbar.scroll-tabs .tab-buttons-container .tab
 super-tabs-toolbar > ion-toolbar.toolbar.scroll-tabs .tab-buttons-container .indicator {
   position: relative;
   margin-top: -2px;
+}
+
+.scroll-content {
+  background: #f7f7f7;
 }
 
 page-page1 ion-slides {

@@ -47,7 +47,7 @@ var Module = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic2_super_tabs_src__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic2_super_tabs__ = __webpack_require__(203);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,14 +56,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 
 
-// import { SuperTabsModule } from 'ionic2-super-tabs';
 var SharedModule = (function () {
     function SharedModule() {
     }
     SharedModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             exports: [
-                __WEBPACK_IMPORTED_MODULE_1__ionic2_super_tabs_src__["b" /* SuperTabsModule */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic2_super_tabs__["c" /* SuperTabsModule */]
             ]
         })
     ], SharedModule);
@@ -81,8 +80,7 @@ var SharedModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Austausch; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic2_super_tabs_src__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic2_super_tabs_src_components_super_tabs__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic2_super_tabs__ = __webpack_require__(203);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -94,7 +92,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-// import {SuperTabsController} from "ionic2-super-tabs";
 
 
 var Austausch = (function () {
@@ -110,14 +107,14 @@ var Austausch = (function () {
         this.pageTitle = 'Die Illustrierte';
     }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3__ionic2_super_tabs_src_components_super_tabs__["a" /* SuperTabs */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3__ionic2_super_tabs_src_components_super_tabs__["a" /* SuperTabs */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2_ionic2_super_tabs__["a" /* SuperTabs */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2_ionic2_super_tabs__["a" /* SuperTabs */])
     ], Austausch.prototype, "superTabs", void 0);
     Austausch = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-austausch',template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/pages/austausch/austausch.html"*/'<ion-header no-shadow no-border>\n  <ion-navbar color="dark">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{ pageTitle }}</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content no-bounce>\n  <super-tabs id="mainTabs" [config]="{ sideMenu: \'left\' }" scrollTabs>\n    <super-tab [root]="partnersuche" title="Partnersuche" icon="" id="partnersuche" [swipeBackEnabled]="false"></super-tab>\n    <super-tab [root]="unterstuetzung" title="Unterstützung" icon="" id="unterstuetzung"></super-tab>\n    <super-tab [root]="zusammenkuenfte" title="Zusammenkünfte" icon="" id="zusammenkuenfte"></super-tab>\n  </super-tabs>\n</ion-content>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/pages/austausch/austausch.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic2_super_tabs_src__["a" /* SuperTabsController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2_ionic2_super_tabs__["b" /* SuperTabsController */]])
     ], Austausch);
     return Austausch;
 }());
