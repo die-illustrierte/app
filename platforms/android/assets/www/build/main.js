@@ -1,4 +1,4 @@
-webpackJsonp([8],{
+webpackJsonp([11],{
 
 /***/ 111:
 /***/ (function(module, exports) {
@@ -21,37 +21,49 @@ webpackEmptyAsyncContext.id = 111;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/home/home.module": [
+	"../pages/austausch/austausch.module": [
 		286,
 		1
 	],
-	"../pages/ionic-tabs-page-1/ionic-tabs-page-1.module": [
+	"../pages/home/home.module": [
 		287,
-		7
+		0
+	],
+	"../pages/ionic-tabs-page-1/ionic-tabs-page-1.module": [
+		288,
+		10
 	],
 	"../pages/ionic-tabs-page-2/ionic-tabs-page-2.module": [
-		288,
-		6
-	],
-	"../pages/ionic-tabs/ionic-tabs.module": [
 		289,
-		5
+		9
+	],
+	"../pages/mainpage/mainpage.module": [
+		290,
+		8
 	],
 	"../pages/page-to-push/page-to-push.module": [
-		290,
-		4
+		291,
+		7
 	],
 	"../pages/page1/page1.module": [
-		291,
-		3
+		292,
+		6
 	],
 	"../pages/page2/page2.module": [
-		292,
-		2
-	],
-	"../pages/austausch/austausch.module": [
 		293,
-		0
+		5
+	],
+	"../pages/partnersuche/partnersuche.module": [
+		294,
+		4
+	],
+	"../pages/unterstuetzung/unterstuetzung.module": [
+		295,
+		3
+	],
+	"../pages/zusammenkuenfte/zusammenkuenfte.module": [
+		296,
+		2
 	]
 };
 function webpackAsyncContext(req) {
@@ -1083,14 +1095,17 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* DieIllustrierte */], {}, {
                     links: [
+                        { loadChildren: '../pages/austausch/austausch.module#Module', name: 'Austausch', segment: 'austausch/:type', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#Module', name: 'HomePage', segment: 'home/:type', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ionic-tabs-page-1/ionic-tabs-page-1.module#IonicTabsPage_1PageModule', name: 'IonicTabsPage_1Page', segment: 'ionic-tabs-page-1', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ionic-tabs-page-2/ionic-tabs-page-2.module#IonicTabsPage_2PageModule', name: 'IonicTabsPage_2Page', segment: 'ionic-tabs-page-2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ionic-tabs/ionic-tabs.module#IonicTabsPageModule', name: 'IonicTabsPage', segment: 'ionic-tabs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/mainpage/mainpage.module#MainPageModule', name: 'MainPage', segment: 'mainpage', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page-to-push/page-to-push.module#Module', name: 'PageToPushPage', segment: 'page-to-push', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page1/page1.module#Module', name: 'Page1Page', segment: 'page1', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page2/page2.module#Module', name: 'Page2Page', segment: 'page2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/austausch/austausch.module#Module', name: 'Austausch', segment: 'austausch/:type', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/partnersuche/partnersuche.module#Module', name: 'PartnersuchePage', segment: 'partnersuche', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/unterstuetzung/unterstuetzung.module#Module', name: 'UnterstuetzungPage', segment: 'unterstuetzung', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/zusammenkuenfte/zusammenkuenfte.module#Module', name: 'ZusammenkuenftePage', segment: 'zusammenkuenfte', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_4__ionic2_super_tabs_src__["b" /* SuperTabsModule */].forRoot()
@@ -1204,8 +1219,16 @@ var DieIllustrierte = (function () {
     function DieIllustrierte(platform, splashScreen, statusBar) {
         this.menuItems = [
             {
-                name: 'Main',
-                page: 'IonicTabsPage'
+                name: 'Artikel',
+                page: 'MainPage'
+            },
+            {
+                name: 'Einstellungen',
+                page: 'MainPage'
+            },
+            {
+                name: 'Über uns',
+                page: 'MainPage'
             }
         ];
         this.rootPage = this.menuItems[0].page;

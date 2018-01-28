@@ -19,8 +19,16 @@ export class DieIllustrierte {
 
   menuItems: any[] = [
     {
-      name: 'Main',
-      page: 'IonicTabsPage'
+      name: 'Artikel',
+      page: 'MainPage'
+    },
+    {
+      name: 'Einstellungen',
+      page: 'MainPage'
+    },
+    {
+      name: 'Über uns',
+      page: 'MainPage'
     }
   ];
 
@@ -29,7 +37,7 @@ export class DieIllustrierte {
     this.rootParams = this.menuItems[0].params;
     platform.ready().then(() => {
       splashScreen.hide();
-      statusBar.backgroundColorByHexString('#BBBBBB')
+      statusBar.backgroundColorByHexString('#BBBBBB');
     });
   }
 

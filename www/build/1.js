@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Module", function() { return Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__austausch__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_shared_module__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__austausch__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_shared_module__ = __webpack_require__(297);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var Module = (function () {
 
 /***/ }),
 
-/***/ 294:
+/***/ 297:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74,7 +74,7 @@ var SharedModule = (function () {
 
 /***/ }),
 
-/***/ 295:
+/***/ 298:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -102,9 +102,9 @@ var Austausch = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.superTabsCtrl = superTabsCtrl;
-        this.page1 = 'Page1Page';
-        this.page2 = 'Page2Page';
-        this.page3 = 'Page3Page';
+        this.partnersuche = 'PartnersuchePage';
+        this.unterstuetzung = 'UnterstuetzungPage';
+        this.zusammenkuenfte = 'ZusammenkuenftePage';
         this.showIcons = false;
         this.showTitles = true;
         this.pageTitle = 'Die Illustrierte';
@@ -115,7 +115,7 @@ var Austausch = (function () {
     ], Austausch.prototype, "superTabs", void 0);
     Austausch = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-austausch',template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/pages/austausch/austausch.html"*/'<ion-header no-shadow no-border>\n  <ion-navbar color="dark">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{ pageTitle }}</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content no-bounce>\n  <super-tabs id="mainTabs" [config]="{ sideMenu: \'left\' }">\n    <super-tab [swipeBackEnabled]="false" [root]="page1" title="Übersicht" icon="" id="page1"></super-tab>\n    <super-tab [root]="page2" title="Im Trend" icon="" id="page2"></super-tab>\n  </super-tabs>\n</ion-content>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/pages/austausch/austausch.html"*/
+            selector: 'page-austausch',template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/pages/austausch/austausch.html"*/'<ion-header no-shadow no-border>\n  <ion-navbar color="dark">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{ pageTitle }}</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content no-bounce>\n  <super-tabs id="mainTabs" [config]="{ sideMenu: \'left\' }" scrollTabs>\n    <super-tab [root]="partnersuche" title="Partnersuche" icon="" id="partnersuche" [swipeBackEnabled]="false"></super-tab>\n    <super-tab [root]="unterstuetzung" title="Unterstützung" icon="" id="unterstuetzung"></super-tab>\n    <super-tab [root]="zusammenkuenfte" title="Zusammenkünfte" icon="" id="zusammenkuenfte"></super-tab>\n  </super-tabs>\n</ion-content>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/pages/austausch/austausch.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic2_super_tabs_src__["a" /* SuperTabsController */]])
     ], Austausch);

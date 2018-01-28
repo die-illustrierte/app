@@ -54,6 +54,12 @@ $colors: (
   background: #fafafa!important;
 }
 
+// Float the last two items of the navigation to the bottom of the list
+ion-menu .menu-inner .list.list-md>button:nth-last-child(2),
+ion-menu .menu-inner .list.list-md>button:nth-last-child(1) {
+  // background: red !important;
+}
+
 
 // App Windows Variables
 // --------------------------------------------------

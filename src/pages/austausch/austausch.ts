@@ -16,9 +16,9 @@ export class Austausch {
 
   @ViewChild(SuperTabs) superTabs: SuperTabs;
 
-  page1: any = 'Page1Page';
-  page2: any = 'Page2Page';
-  page3: any = 'Page3Page';
+  partnersuche: any = 'PartnersuchePage';
+  unterstuetzung: any = 'UnterstuetzungPage';
+  zusammenkuenfte: any = 'ZusammenkuenftePage';
 
   showIcons: boolean = false;
   showTitles: boolean = true;

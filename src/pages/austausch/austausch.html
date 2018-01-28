@@ -12,8 +12,9 @@
   </ion-navbar>
 </ion-header>
 <ion-content no-bounce>
-  <super-tabs id="mainTabs" [config]="{ sideMenu: 'left' }">
-    <super-tab [swipeBackEnabled]="false" [root]="page1" title="Übersicht" icon="" id="page1"></super-tab>
-    <super-tab [root]="page2" title="Im Trend" icon="" id="page2"></super-tab>
+  <super-tabs id="mainTabs" [config]="{ sideMenu: 'left' }" scrollTabs>
+    <super-tab [root]="partnersuche" title="Partnersuche" icon="" id="partnersuche" [swipeBackEnabled]="false"></super-tab>
+    <super-tab [root]="unterstuetzung" title="Unterstützung" icon="" id="unterstuetzung"></super-tab>
+    <super-tab [root]="zusammenkuenfte" title="Zusammenkünfte" icon="" id="zusammenkuenfte"></super-tab>
   </super-tabs>
 </ion-content>

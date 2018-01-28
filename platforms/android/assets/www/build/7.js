@@ -1,14 +1,14 @@
 webpackJsonp([7],{
 
-/***/ 287:
+/***/ 291:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IonicTabsPage_1PageModule", function() { return IonicTabsPage_1PageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Module", function() { return Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_tabs_page_1__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__page_to_push__ = __webpack_require__(303);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var IonicTabsPage_1PageModule = (function () {
-    function IonicTabsPage_1PageModule() {
+var Module = (function () {
+    function Module() {
     }
-    IonicTabsPage_1PageModule = __decorate([
+    Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__ionic_tabs_page_1__["a" /* IonicTabsPage_1Page */],
+                __WEBPACK_IMPORTED_MODULE_2__page_to_push__["a" /* PageToPushPage */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__ionic_tabs_page_1__["a" /* IonicTabsPage_1Page */]),
-            ],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__page_to_push__["a" /* PageToPushPage */])
+            ]
         })
-    ], IonicTabsPage_1PageModule);
-    return IonicTabsPage_1PageModule;
+    ], Module);
+    return Module;
 }());
 
-//# sourceMappingURL=ionic-tabs-page-1.module.js.map
+//# sourceMappingURL=page-to-push.module.js.map
 
 /***/ }),
 
-/***/ 296:
+/***/ 303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IonicTabsPage_1Page; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageToPushPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -56,30 +56,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the IonicTabsPage_1Page page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var IonicTabsPage_1Page = (function () {
-    function IonicTabsPage_1Page(navCtrl, navParams) {
+var PageToPushPage = (function () {
+    function PageToPushPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    IonicTabsPage_1Page.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad IonicTabsPage_1Page');
-    };
-    IonicTabsPage_1Page = __decorate([
+    PageToPushPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ionic-tabs-page-1',template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/pages/ionic-tabs-page-1/ionic-tabs-page-1.html"*/'<!--\n  Generated template for the IonicTabsPage_1Page page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/pages/ionic-tabs-page-1/ionic-tabs-page-1.html"*/,
+            selector: 'page-page-to-push',template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/pages/page-to-push/page-to-push.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>PageToPush</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <div>\n    I\'m just any page that you can open in a modal, or push using your NavController.\n  </div>\n  <ion-item>\n    <ion-label>Text field</ion-label>\n    <ion-input></ion-input>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/pages/page-to-push/page-to-push.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], IonicTabsPage_1Page);
-    return IonicTabsPage_1Page;
+    ], PageToPushPage);
+    return PageToPushPage;
 }());
 
-//# sourceMappingURL=ionic-tabs-page-1.js.map
+//# sourceMappingURL=page-to-push.js.map
 
 /***/ })
 

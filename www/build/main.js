@@ -1,4 +1,4 @@
-webpackJsonp([8],{
+webpackJsonp([11],{
 
 /***/ 111:
 /***/ (function(module, exports) {
@@ -31,26 +31,38 @@ var map = {
 	],
 	"../pages/ionic-tabs-page-1/ionic-tabs-page-1.module": [
 		288,
-		7
+		10
 	],
 	"../pages/ionic-tabs-page-2/ionic-tabs-page-2.module": [
 		289,
-		6
+		9
 	],
-	"../pages/ionic-tabs/ionic-tabs.module": [
+	"../pages/mainpage/mainpage.module": [
 		290,
-		5
+		8
 	],
 	"../pages/page-to-push/page-to-push.module": [
 		291,
-		4
+		7
 	],
 	"../pages/page1/page1.module": [
 		292,
-		3
+		6
 	],
 	"../pages/page2/page2.module": [
 		293,
+		5
+	],
+	"../pages/partnersuche/partnersuche.module": [
+		294,
+		4
+	],
+	"../pages/unterstuetzung/unterstuetzung.module": [
+		295,
+		3
+	],
+	"../pages/zusammenkuenfte/zusammenkuenfte.module": [
+		296,
 		2
 	]
 };
@@ -1087,10 +1099,13 @@ var AppModule = (function () {
                         { loadChildren: '../pages/home/home.module#Module', name: 'HomePage', segment: 'home/:type', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ionic-tabs-page-1/ionic-tabs-page-1.module#IonicTabsPage_1PageModule', name: 'IonicTabsPage_1Page', segment: 'ionic-tabs-page-1', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ionic-tabs-page-2/ionic-tabs-page-2.module#IonicTabsPage_2PageModule', name: 'IonicTabsPage_2Page', segment: 'ionic-tabs-page-2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ionic-tabs/ionic-tabs.module#IonicTabsPageModule', name: 'IonicTabsPage', segment: 'ionic-tabs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/mainpage/mainpage.module#MainPageModule', name: 'MainPage', segment: 'mainpage', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page-to-push/page-to-push.module#Module', name: 'PageToPushPage', segment: 'page-to-push', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page1/page1.module#Module', name: 'Page1Page', segment: 'page1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/page2/page2.module#Module', name: 'Page2Page', segment: 'page2', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/page2/page2.module#Module', name: 'Page2Page', segment: 'page2', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/partnersuche/partnersuche.module#Module', name: 'PartnersuchePage', segment: 'partnersuche', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/unterstuetzung/unterstuetzung.module#Module', name: 'UnterstuetzungPage', segment: 'unterstuetzung', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/zusammenkuenfte/zusammenkuenfte.module#Module', name: 'ZusammenkuenftePage', segment: 'zusammenkuenfte', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_4__ionic2_super_tabs_src__["b" /* SuperTabsModule */].forRoot()
@@ -1204,8 +1219,16 @@ var DieIllustrierte = (function () {
     function DieIllustrierte(platform, splashScreen, statusBar) {
         this.menuItems = [
             {
-                name: 'Main',
-                page: 'IonicTabsPage'
+                name: 'Artikel',
+                page: 'MainPage'
+            },
+            {
+                name: 'Einstellungen',
+                page: 'MainPage'
+            },
+            {
+                name: 'Über uns',
+                page: 'MainPage'
             }
         ];
         this.rootPage = this.menuItems[0].page;
