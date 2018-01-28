@@ -1,8 +1,9 @@
 {
-  "name": "ionic2-super-tabs-example",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "name": "die-illustrierte-app",
+  "author": "Felix Pojtinger",
+  "homepage": "https://die-illustrierte.github.io/",
   "private": true,
+  "license": "GPL-3.0",
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
@@ -50,7 +51,7 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "description": "super-tabs: An Ionic project",
+  "description": "The mobile frontend for a news site for German class about the novel 'Der goldne Topf'. Content etc. is fictional, obviously.",
   "cordova": {
     "plugins": {
       "cordova-plugin-console": {},
