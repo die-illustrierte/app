@@ -1,20 +1,13 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/v2/theming/
 $font-path: "../assets/fonts";
-
 @import "ionic.globals";
-
-
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
-
-
-
-
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -22,72 +15,59 @@ $font-path: "../assets/fonts";
 // to match your app's branding. Ionic uses a Sass map of
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
-
-$colors: (
-  primary : #000,
-
-  secondary:  #000,
-  danger:     #f53d3d,
-  light:      #000,
-  dark:       #FAFAFA,
-  yellow:     #000
-);
-
-
+$colors: ( primary: #000, secondary : #000, danger : #f53d3d, light : #000, dark : #FAFAFA, yellow : #000);
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
-
-
-
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
 .item-md {
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 // Make the tool uniform with the rest of the UI
 .toolbar-background-md {
-  background: #fafafa!important;
+  background: #fafafa !important;
+}
+
+// Make the menu full height to enable the fixed positioning of the last 2 items
+ion-menu .menu-inner .list {
+  margin: 0;
+  height: 100%;
+}
+
+// Prevent vertical scrolling on iOS
+ion-menu .menu-inner .scroll-content::before {
+  bottom: 0 !important;
 }
 
 // Float the last two items of the navigation to the bottom of the list
-ion-menu .menu-inner .list.list-md>button:nth-last-child(2),
-ion-menu .menu-inner .list.list-md>button:nth-last-child(1) {
-  // background: red !important;
+ion-menu .menu-inner .list>button:nth-last-child(2) {
+  position: fixed;
+  bottom: 4.4rem;
 }
-
+ion-menu .menu-inner .list>button:last-child {
+  position: fixed;
+  bottom: 0;
+}
 
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
-
-
-
-
 // App Theme
 // --------------------------------------------------
 // Ionic apps can have different themes applied, which can
 // then be future customized. This import comes last
 // so that the above variables are used and Ionic's
 // default are overridden.
-
 @import "ionic.theme.default";
-
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/v2/ionicons/
-
 @import "ionic.ionicons";
-
-
 // Fonts
 // --------------------------------------------------
-
 @import "roboto";
 @import "noto-sans";

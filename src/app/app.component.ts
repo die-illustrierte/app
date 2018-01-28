@@ -19,7 +19,15 @@ export class DieIllustrierte {
 
   menuItems: any[] = [
     {
-      name: 'Artikel',
+      name: 'Aktuelle Ausgabe',
+      page: 'MainPage'
+    },
+    {
+      name: 'Archiv',
+      page: 'MainPage'
+    },
+    {
+      name: 'Web-Ansicht',
       page: 'MainPage'
     },
     {

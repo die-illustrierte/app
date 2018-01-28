@@ -6,6 +6,25 @@
   background: #fafafa !important;
 }
 
+ion-menu .menu-inner .list {
+  margin: 0;
+  height: 100%;
+}
+
+ion-menu .menu-inner .scroll-content::before {
+  bottom: 0 !important;
+}
+
+ion-menu .menu-inner .list > button:nth-last-child(2) {
+  position: fixed;
+  bottom: 4.4rem;
+}
+
+ion-menu .menu-inner .list > button:last-child {
+  position: fixed;
+  bottom: 0;
+}
+
 .ion-ios-add:before {
   content: "\f102";
 }

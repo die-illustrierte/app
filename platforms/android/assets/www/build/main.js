@@ -192,7 +192,15 @@ var DieIllustrierte = (function () {
     function DieIllustrierte(platform, splashScreen, statusBar) {
         this.menuItems = [
             {
-                name: 'Artikel',
+                name: 'Aktuelle Ausgabe',
+                page: 'MainPage'
+            },
+            {
+                name: 'Archiv',
+                page: 'MainPage'
+            },
+            {
+                name: 'Web-Ansicht',
                 page: 'MainPage'
             },
             {
