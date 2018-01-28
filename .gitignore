@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Sourcemaps
+.sourcemaps
+
+# Vscode config
+.vscode
