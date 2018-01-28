@@ -1081,11 +1081,11 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */]
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* DieIllustrierte */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* DieIllustrierte */], {}, {
                     links: [
                         { loadChildren: '../pages/home/home.module#Module', name: 'HomePage', segment: 'home/:type', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ionic-tabs-page-1/ionic-tabs-page-1.module#IonicTabsPage_1PageModule', name: 'IonicTabsPage_1Page', segment: 'ionic-tabs-page-1', priority: 'low', defaultHistory: [] },
@@ -1102,7 +1102,7 @@ var AppModule = (function () {
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */]
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* DieIllustrierte */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */],
@@ -1187,7 +1187,7 @@ var SuperTabsModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DieIllustrierte; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(199);
@@ -1205,8 +1205,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var MyApp = (function () {
-    function MyApp(platform, splashScreen, statusBar) {
+var DieIllustrierte = (function () {
+    function DieIllustrierte(platform, splashScreen, statusBar) {
         this.menuItems = [
             {
                 name: 'Main',
@@ -1220,19 +1220,19 @@ var MyApp = (function () {
             statusBar.backgroundColorByHexString('#BBBBBB');
         });
     }
-    MyApp.prototype.openPage = function (page) {
+    DieIllustrierte.prototype.openPage = function (page) {
         this.nav.setRoot(page.page, page.params);
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */])
-    ], MyApp.prototype, "nav", void 0);
-    MyApp = __decorate([
+    ], DieIllustrierte.prototype, "nav", void 0);
+    DieIllustrierte = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/app/app.html"*/'<ion-split-pane>\n  <ion-menu [content]="content">\n    <ion-content>\n      <ion-list>\n        <button ion-item menuClose *ngFor="let item of menuItems" (click)="openPage(item)">{{ item.name }}</button>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n  <ion-nav [root]="rootPage" [rootParams]="rootParams" main #content></ion-nav>\n</ion-split-pane>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]])
-    ], MyApp);
-    return MyApp;
+    ], DieIllustrierte);
+    return DieIllustrierte;
 }());
 
 //# sourceMappingURL=app.component.js.map

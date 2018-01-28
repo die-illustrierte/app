@@ -1,7 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+import { DieIllustrierte } from './app.component';
 
 import { SuperTabsModule } from '../ionic2-super-tabs/src';
 // import { SuperTabsModule } from 'ionic2-super-tabs';
@@ -11,16 +11,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 @NgModule({
   declarations: [
-    MyApp
+    DieIllustrierte
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(DieIllustrierte),
     SuperTabsModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    DieIllustrierte
   ],
   providers: [
     SplashScreen,

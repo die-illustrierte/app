@@ -42,4 +42,4 @@ ionic cordova build android
 If you don't own a device but you want to test the app for it, just set the UI mode to the one you'd like to use in ```./src/app/app.module.ts``` and run in web mode/on the device you have:
 
 
-Change line ```IonicModule.forRoot(MyApp),``` to ```IonicModule.forRoot(MyApp, {mode: <var>'yourmode'</var>}),``` with <var>'yourmode'</var> being either <var>'md'</var> (Android), <var>'ios'</var> (Apple) or <var>'wp'</var> (Windows Phone).
+Change line ```IonicModule.forRoot(DieIllustrierte),``` to ```IonicModule.forRoot(DieIllustrierte, {mode: <var>'yourmode'</var>}),``` with <var>'yourmode'</var> being either <var>'md'</var> (Android), <var>'ios'</var> (Apple) or <var>'wp'</var> (Windows Phone).

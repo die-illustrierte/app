@@ -10,7 +10,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
+export class DieIllustrierte {
 
   @ViewChild(Nav) nav: Nav;
 
