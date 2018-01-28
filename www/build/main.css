@@ -2,6 +2,10 @@
   background-color: transparent !important;
 }
 
+.toolbar-background-md {
+  background: #fafafa !important;
+}
+
 .ion-ios-add:before {
   content: "\f102";
 }
