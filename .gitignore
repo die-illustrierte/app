@@ -64,4 +64,4 @@ typings/
 .vscode
 
 # Build output for the web
-www/build
+www/

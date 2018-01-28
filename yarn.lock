@@ -1658,6 +1658,10 @@ ionic-plugin-keyboard@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ionic-plugin-keyboard/-/ionic-plugin-keyboard-2.2.1.tgz#f2a9e169bbe9b5522400347c9fd6d3467ee3fa12"
 
+ionic2-super-tabs@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/ionic2-super-tabs/-/ionic2-super-tabs-4.2.2.tgz#d59fdbb0183513011c68cc2df74684e275916b08"
+
 ionicons@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-3.0.0.tgz#40b8daf4fd7a31150bd002160f66496e22a98c3c"
