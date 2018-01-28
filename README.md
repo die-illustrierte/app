@@ -35,6 +35,7 @@ sudo update-alternatives --config javac
 # That should be it!
 # Now compile the APK
 ionic cordova build android
+# you'll find the APK in ./platforms/android/build/outputs/apk/android-debug.apk
 ```
 
 ## Choose UI Look
