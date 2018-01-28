@@ -105,35 +105,22 @@ var HomePage = (function () {
         this.page1 = 'Page1Page';
         this.page2 = 'Page2Page';
         this.page3 = 'Page3Page';
-        this.showIcons = true;
+        this.showIcons = false;
         this.showTitles = true;
         this.pageTitle = 'Die Illustrierte';
-        // Disable the icons
-        this.showIcons = false;
     }
-    HomePage.prototype.ngAfterViewInit = function () {
-        // this.superTabsCtrl.increaseBadge('page1', 10);
-        // this.superTabsCtrl.enableTabSwipe('page3', false);
-        // this.superTabsCtrl.enableTabsSwipe(false);
-        // Test issue #122
-        // setTimeout(() => {
-        //   this.superTabs.slideTo(4);
-        // }, 2000);
-    };
-    HomePage.prototype.onTabSelect = function (tab) {
-        console.log("Selected tab: ", tab);
-    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3__ionic2_super_tabs_src_components_super_tabs__["a" /* SuperTabs */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3__ionic2_super_tabs_src_components_super_tabs__["a" /* SuperTabs */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__ionic2_super_tabs_src_components_super_tabs__["a" /* SuperTabs */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic2_super_tabs_src_components_super_tabs__["a" /* SuperTabs */]) === "function" && _a || Object)
     ], HomePage.prototype, "superTabs", void 0);
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/pages/home/home.html"*/'<ion-header no-shadow no-border>\n  <ion-navbar color="dark">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{ pageTitle }}</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content no-bounce>\n  <super-tabs id="mainTabs" [config]="{ sideMenu: \'left\' }" scrollTabs toolbarColor="light" toolbarBackground="dark" indicatorColor="yellow" badgeColor="yellow" (tabSelect)="onTabSelect($event)">\n    <super-tab [swipeBackEnabled]="false" [root]="page1" [title]="showTitles? \'Home\' : \'\'" [icon]="showIcons? \'home\': \'\'" id="page1"></super-tab>\n    <super-tab [root]="page2" [title]="showTitles? \'Trending\' : \'\'" [icon]="showIcons? \'trending-up\' : \'\'" id="page2"></super-tab>\n    <super-tab [root]="page3" [title]="showTitles? \'Favorites\' : \'\'" [icon]="showIcons? \'heart\' : \'\'" id="page3"></super-tab>\n    <super-tab [root]="page1" [title]="showTitles? \'Hot\' : \'\'" [icon]="showIcons? \'flame\': \'\'" id="page4"></super-tab>\n    <super-tab [root]="page2" [title]="showTitles? \'Nearby\' : \'\'" [icon]="showIcons? \'pin\' : \'\'" id="page5"></super-tab>\n    <super-tab [root]="page3" [title]="showTitles? \'Analytics\' : \'\'" [icon]="showIcons? \'analytics\' : \'\'" id="page6"></super-tab>\n\n    <!-- more tabs for testing -->\n    <super-tab [root]="page1" [title]="showTitles? \'Home\' : \'\'" [icon]="showIcons? \'home\': \'\'" id="page7"></super-tab>\n    <super-tab [root]="page2" [title]="showTitles? \'Trending\' : \'\'" [icon]="showIcons? \'trending-up\' : \'\'" id="page8"></super-tab>\n    <super-tab [root]="page3" [title]="showTitles? \'Favorites\' : \'\'" [icon]="showIcons? \'heart\' : \'\'" id="page9"></super-tab>\n    <super-tab [root]="page1" [title]="showTitles? \'Hot\' : \'\'" [icon]="showIcons? \'flame\': \'\'" id="page10"></super-tab>\n    <super-tab [root]="page2" [title]="showTitles? \'Nearby\' : \'\'" [icon]="showIcons? \'pin\' : \'\'" id="page11"></super-tab>\n    <super-tab [root]="page1" [title]="showTitles? \'Hot\' : \'\'" [icon]="showIcons? \'flame\': \'\'" id="page10"></super-tab>\n    <super-tab [root]="page3" [title]="showTitles? \'Analytics\' : \'\'" [icon]="showIcons? \'analytics\' : \'\'" id="page12"></super-tab>\n  </super-tabs>\n</ion-content>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/pages/home/home.html"*/'<ion-header no-shadow no-border>\n  <ion-navbar color="dark">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{ pageTitle }}</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content no-bounce>\n  <super-tabs id="mainTabs" [config]="{ sideMenu: \'left\' }" scrollTabs toolbarColor="light" toolbarBackground="dark" indicatorColor="yellow" badgeColor="yellow">\n    <super-tab [swipeBackEnabled]="false" [root]="page1" [title]="showTitles? \'Home\' : \'\'" [icon]="showIcons? \'home\': \'\'" id="page1"></super-tab>\n    <super-tab [root]="page2" [title]="showTitles? \'Trending\' : \'\'" [icon]="showIcons? \'trending-up\' : \'\'" id="page2"></super-tab>\n    <super-tab [root]="page3" [title]="showTitles? \'Favorites\' : \'\'" [icon]="showIcons? \'heart\' : \'\'" id="page3"></super-tab>\n    <super-tab [root]="page1" [title]="showTitles? \'Hot\' : \'\'" [icon]="showIcons? \'flame\': \'\'" id="page4"></super-tab>\n    <super-tab [root]="page2" [title]="showTitles? \'Nearby\' : \'\'" [icon]="showIcons? \'pin\' : \'\'" id="page5"></super-tab>\n  </super-tabs>\n</ion-content>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic2_super_tabs_src__["a" /* SuperTabsController */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__ionic2_super_tabs_src__["a" /* SuperTabsController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic2_super_tabs_src__["a" /* SuperTabsController */]) === "function" && _d || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=home.js.map
