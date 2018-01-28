@@ -63,5 +63,5 @@ typings/
 # Vscode config
 .vscode
 
-# Ionic debug logs
-www/build/.ion-diagnostic-typescript.html
+# Build output for the web
+www/build
