@@ -49,7 +49,7 @@ var map = {
 		292,
 		2
 	],
-	"../pages/partial-home/partial-home.module": [
+	"../pages/austausch/austausch.module": [
 		293,
 		0
 	]
@@ -1090,7 +1090,7 @@ var AppModule = (function () {
                         { loadChildren: '../pages/page-to-push/page-to-push.module#Module', name: 'PageToPushPage', segment: 'page-to-push', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page1/page1.module#Module', name: 'Page1Page', segment: 'page1', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/page2/page2.module#Module', name: 'Page2Page', segment: 'page2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/partial-home/partial-home.module#Module', name: 'PartialHomePage', segment: 'partial-home/:type', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/austausch/austausch.module#Module', name: 'Austausch', segment: 'austausch/:type', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_4__ionic2_super_tabs_src__["b" /* SuperTabsModule */].forRoot()

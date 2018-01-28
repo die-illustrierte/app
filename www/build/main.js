@@ -1,4 +1,4 @@
-webpackJsonp([7],{
+webpackJsonp([8],{
 
 /***/ 111:
 /***/ (function(module, exports) {
@@ -21,33 +21,37 @@ webpackEmptyAsyncContext.id = 111;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/home/home.module": [
+	"../pages/austausch/austausch.module": [
 		286,
+		1
+	],
+	"../pages/home/home.module": [
+		287,
 		0
 	],
 	"../pages/ionic-tabs-page-1/ionic-tabs-page-1.module": [
-		287,
-		6
+		288,
+		7
 	],
 	"../pages/ionic-tabs-page-2/ionic-tabs-page-2.module": [
-		288,
-		5
+		289,
+		6
 	],
 	"../pages/ionic-tabs/ionic-tabs.module": [
-		289,
-		4
+		290,
+		5
 	],
 	"../pages/page-to-push/page-to-push.module": [
-		290,
-		3
+		291,
+		4
 	],
 	"../pages/page1/page1.module": [
-		291,
-		2
+		292,
+		3
 	],
 	"../pages/page2/page2.module": [
-		292,
-		1
+		293,
+		2
 	]
 };
 function webpackAsyncContext(req) {
@@ -1079,6 +1083,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* DieIllustrierte */], {}, {
                     links: [
+                        { loadChildren: '../pages/austausch/austausch.module#Module', name: 'Austausch', segment: 'austausch/:type', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#Module', name: 'HomePage', segment: 'home/:type', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ionic-tabs-page-1/ionic-tabs-page-1.module#IonicTabsPage_1PageModule', name: 'IonicTabsPage_1Page', segment: 'ionic-tabs-page-1', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ionic-tabs-page-2/ionic-tabs-page-2.module#IonicTabsPage_2PageModule', name: 'IonicTabsPage_2Page', segment: 'ionic-tabs-page-2', priority: 'low', defaultHistory: [] },
@@ -1215,15 +1220,14 @@ var DieIllustrierte = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */])
     ], DieIllustrierte.prototype, "nav", void 0);
     DieIllustrierte = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/app/app.html"*/'<ion-split-pane>\n  <ion-menu [content]="content">\n    <ion-content>\n      <ion-list>\n        <button ion-item menuClose *ngFor="let item of menuItems" (click)="openPage(item)">{{ item.name }}</button>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n  <ion-nav [root]="rootPage" [rootParams]="rootParams" main #content></ion-nav>\n</ion-split-pane>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]])
     ], DieIllustrierte);
     return DieIllustrierte;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=app.component.js.map

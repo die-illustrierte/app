@@ -56,7 +56,7 @@ var IonicTabsPage = (function () {
     }
     IonicTabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ionic-tabs',template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/pages/ionic-tabs/ionic-tabs.html"*/'<ion-tabs>\n  <ion-tab root="HomePage" tabTitle="Feed" tabIcon="home"></ion-tab>\n  <ion-tab root="IonicTabsPage_2Page" tabTitle="Aktuell" tabIcon="notifications"></ion-tab>\n  <ion-tab root="HomePage" tabTitle="Blicke" tabIcon="eye"></ion-tab>\n  <ion-tab root="IonicTabsPage_2Page" tabTitle="Kultur" tabIcon="school"></ion-tab>\n  <ion-tab root="HomePage" tabTitle="Info" tabIcon="information-circle"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/pages/ionic-tabs/ionic-tabs.html"*/,
+            selector: 'page-ionic-tabs',template:/*ion-inline-start:"/home/pojntfx/die-illustrierte-app/src/pages/ionic-tabs/ionic-tabs.html"*/'<ion-tabs>\n  <ion-tab root="HomePage" tabTitle="Übersicht" tabIcon="home"></ion-tab>\n  <ion-tab root="HomePage" tabTitle="Blicke" tabIcon="eye"></ion-tab>\n  <ion-tab root="IonicTabsPage_2Page" tabTitle="Kultur" tabIcon="school"></ion-tab>\n  <ion-tab root="HomePage" tabTitle="Anhang" tabIcon="easel"></ion-tab>\n  <ion-tab root="Austausch" tabTitle="Austausch" tabIcon="bonfire"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/pojntfx/die-illustrierte-app/src/pages/ionic-tabs/ionic-tabs.html"*/,
         })
     ], IonicTabsPage);
     return IonicTabsPage;
